@@ -1,0 +1,81 @@
+body {
+  background: black;
+  color: white;
+  font-family: "Lilita One", cursive;
+  text-shadow: 1px 1px black;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+header,
+main,
+footer {
+  margin: 100px auto;
+  width: 50%;
+  text-align: center;
+}
+
+header {
+  margin: 100px auto 20px;
+}
+
+main div > ul {
+  text-align: left;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+li h4 {
+  margin: 0;
+  padding: 0;
+}
+
+div > ul > li {
+  margin: 3px;
+}
+
+main {
+  display: grid;
+}
+
+.error {
+  border: 1px solid red;
+  transform: scale(1.05);
+  margin: 0 8px;
+}
+
+#image i {
+  position: absolute;
+  top: 40%;
+  left: 55%;
+  z-index: -1;
+  transform: scale(25);
+}
+
+#image i,
+#image i::before,
+#image i::after {
+  opacity: 0.8;
+  text-shadow: 0.3px 0.3px rgba(128, 128, 128, 0.8);
+}
+
+#meteo {
+  background: rgba(128, 128, 128, 0.6);
+  border-radius: 10px;
+  width: 50%;
+  padding: 10px 10px 25px 10px;
+  margin: 25px auto;
+  display: none;
+}
+
+#mapid {
+  height: 300px;
+  width: 900px;
+  text-shadow: none;
+  position: relative;
+}
+
+#mapid.hidden {
+  position: absolute;
+  left: -8000px;
+}
